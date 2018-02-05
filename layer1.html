@@ -1,0 +1,23 @@
+<html>
+<head><title>Layer z-index</title></head>
+<style type="text/css">
+  .L1 {color:white; background-color:blue; padding:50px;
+      top:60px; left:80px; width:260; z-index:4;
+      position:absolute; padding:30}
+  .L2 {color:white; background-color:orange; padding:30px;
+      top:20px; left:20px; width:90; z-index:2;
+      position:absolute; padding:10}
+  .L3 {color:white; background-color:green;
+      top:150px; left:100px; width:320; z-index:0;
+      position:absolute }
+</style>
+<body>
+  <div class="L1">첫 번째 레이어입니다. <b>z-index값이 1</b>이므로
+     중간 층으로 보일 겁니다. padding:30</div>
+  <div class="L2">두 번째 레이어입니다. <b>z-index값이 2</b>이므로
+     가장 윗 층으로 보일 겁니다. padding:10</div>
+  <div class="L3">세 번째 레이어입니다.<p>
+     <b>z-index값이 0</b>이므로 가장 아래 층으로 보일 겁니다.
+     padding 지정 안함</div>
+</body>
+</html>

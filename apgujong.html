@@ -1,0 +1,24 @@
+<html><head><title>레이어의 위치 이동</title></head> 
+<script language="JavaScript"> 
+  function layer1() { car.left = 30; car.top = 20 } // 압구정역 
+  function layer2() { car.left = 185; car.top = 70 } // 압구정로 
+  function layer3() { car.left = 100; car.top = 200 } // 선릉로 
+  function layer4() { car.left = 270; car.top = 230 } // 선릉로 
+  function first() { 
+    car=bus.style;    // 객체 id "bus"를 car로 지정 
+  } 
+</script> 
+</head> 
+
+<body onload="first()"> 
+<img src="apgujong.gif" width="307" height="247"> 
+<div id="bus" style="position:absolute; top:0; left:0;"> 
+  <img src="bus.gif"> 
+</div> 
+<form> 
+  <input type="button" value="압구정역" onclick="layer1();"> 
+  <input type="button" value="압구정로" onclick="layer2();"> 
+  <input type="button" value="선릉로" onclick="layer3();"> 
+  <input type="button" value="청담동" onclick="layer4();"> 
+</form> 
+</body></html>
